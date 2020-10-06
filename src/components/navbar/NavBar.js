@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
 import './NavBar.css';
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import Button from "../button/Button";
 
 const NavBar = () => {
@@ -40,27 +40,31 @@ const NavBar = () => {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <NavLink to="/" exact={true} className="nav-links" activeClassName='nav-link-active' onClick={closeMobileMenu}>
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
+                exact={true} 
+                activeClassName='nav-link-active'
                 to="/services"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Servicios
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
+                exact={true} 
+                activeClassName='nav-link-active'
                 to="/products"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Productos
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
               <Link

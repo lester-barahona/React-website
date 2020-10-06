@@ -1,5 +1,5 @@
 .cards {
-    padding: 4rem;
+    padding: 2rem .1rem;
     background: #fff;
   }
   
@@ -22,6 +22,7 @@
   }
   
   .cards__items {
+    width: 100%;
     margin-bottom: 24px;
   }
   

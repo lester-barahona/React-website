@@ -3,7 +3,7 @@ import  './../App.css';
 
 const SignUp = () => {
     return (
-        <h1 className="sign-up">Regístrarse</h1>
+        <h1 className="sign-up">REGÍSTRARSE</h1>
     )
 }
 
